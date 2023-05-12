@@ -19,14 +19,14 @@ public class MainClass09 {
          byte[] buffer=new byte[1024];
          //반목문 돌면서 
          while(true) {
-            //byte[] 배열을 전달해서 byte 알갱이를 한번에 1024 개씩 읽어들인다.
-            int readedCount=fis.read(buffer);
-            if(readedCount==-1)break;//더이상 읽을게 없다면 반복문 탈출
-            //byte[] 배열에 저장된 byte 알갱이를 0번 인덱스로 부터 읽은 갯수만큼만 출력하기
+        	 //byte[] 배열을 전달해서 byte 알갱이를 한번에 1024개 읽어들인다
+            int readedCount=fis.read(buffer);    //몇 바이트를 읽었는지 갯수가 나옴
+            if(readedCount==-1)break;
+            //byte[]배열에 저장된 byte 알갱이를 읽은 갯수만큼 출력하기
             fos.write(buffer, 0, readedCount);
             fos.flush();
          }
-         System.out.println("파일을 copy 했습니다.");
+         System.out.println("파일을 copy 했습니다");
       }catch(Exception e) {
          e.printStackTrace();
       }finally {
