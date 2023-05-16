@@ -15,7 +15,9 @@ public class MainClass15 {
 		if(isSuccess) {
 			System.out.println("삭제 했습니다");
 		}
+
 	}
+	
 		
 	}
 
