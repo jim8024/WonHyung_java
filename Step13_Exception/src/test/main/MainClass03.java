@@ -35,7 +35,7 @@ public class MainClass03 {
 		System.out.println("예외가 발생했습니다");
 		System.out.println("예외 메세지"+e.getMessage());
 	}finally {
-		//여기는 예외가 발생을 하던 안하건 반드시 실향이 보장되는 브럭이다
+		//여기는 예외가 발생을 하던 안하건 반드시 실향이 보장되는 블럭이다
 		//중요한 마무리 작업을 여기서 주로 수행한다.
 		System.out.println("중요한 마무리 작업을 진행합니다!");	
 	}
