@@ -69,7 +69,7 @@ public class MyFrame extends JFrame implements ActionListener{
 		 */
 		if(cmd.equals("send")) {
 			JOptionPane.showMessageDialog(this, "전송");
-		}else if(cmd.equals("delste")) {
+		}else if(cmd.equals("delete")) {
 			JOptionPane.showMessageDialog(this, "삭제");
 		}else if(cmd.equals("update")) {
 			JOptionPane.showMessageDialog(this, "수정합니다");
